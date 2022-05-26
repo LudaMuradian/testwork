@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTUPE html >
 <html lang="ru" >
 <html lang="eng" >
-<html lang="aze" >
+
 <head>	
     <meta charset="UTF-8">
 	<title>Тестовое задание Мурадян Людмила.</title>
@@ -10,97 +10,106 @@
 	<meta name="description" content="Описание содержимого страницы">
 	<meta name="robots" content="index, follow">	
 	
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "font/tt-travels/stylesheet.css" rel = "stylesheet" type = "text/css" />
 	
-	<body>	
-	<div class ="top-lang"><div class ="wrap-lang"><div class ="lang">Eng</div><div class ="lang">Aze</div><div class ="lang">Rus</div> </div></div>
-	
+	<body>
+	<script async src="js/script.js"></script>
 	<div class ="content-block">
-		<div class ="wrap-menu">
-			<div class ="logo"><div class = "logo2"><span>Logo</span></div></div>
-			<div class ="main-menu">
-				<ul class ="main-link">
-					<li><a href="#">Lorem ipsum dolor sit </a></li>
-					<li><a href="#">Lorem ipsum dolor</a></li>
-					<li><a href="#">Lorem ipsum dolor</a></li>
-				</ul>
-				<ul class ="main-link">
-					<li><a href="#">Lorem ipsum</a></li>
-					<li><a href="#">Lorem ipsum dolor sit amet,  consectetur adipiscing</a></li>
-					<li><a href="#">Lorem ipsum dolor sit</a></li>
-				</ul>
+		<div class ="top-nav">
+			<div class = "nav-check"> 
+				<div class ="logo-img"><img src="image/logo.png" alt="logo"></div>
+				<div class="switch-button">
+					<input class="switch-button-checkbox" type="checkbox"></input>
+					<label class="switch-button-label" for=""><span class="switch-button-label-span">Дом</span></label>
+				</div>
+				<div class ="main-menu"><li>После ремонта</li><li>Генеральная уборка</li><li>Регулярная уборка</li><li>Мойка окон</li></div>
+				<div class ="tel"><div>+380 67 401 69 77</div><hr><div>24/7</div></div>
+				<div class ="double-line" href ="javascript:void(0);" onclick="myFunction();"></div>
+			</div>		
+		</div>	
+		<div class ="header">
+			<div class ="header-img"></div>	
+			<div class ="wrap"><div class ="wrapper"><div class ="wrap-circle"><span class ="wrap-text">Заказать уборку</span></div></div></div>	
+			<div class ="header-text"> 		
+				<h1>Уборка квартир в Киеве<h1> 
+				<span>Мы уберем у вас дома или в офисе. Наведем чистоту после ремонта и проведем генеральную уборку.</span>
+			</div>		
+		</div>
+		<div class ="features-wrap">
+		<div class ="itm">
+		<div class ="text">Не нужно тратить время, силы и ресурсы на размещение вакансий, проведение собеседований, проверку кандидатов на должность уборщицы. За счет больших объемов мы можем сделать это эффективнее.</div>
+			<div class ="features">			
+				<div class = "features-text"><span>Тщательно отобранный персонал</span></div> 
+				<div class = "features-img"><img src="image/feat1.png" alt="Уборка в Киеве"></div>
 			</div>
 		</div>
-		<div class ="top-menu" id="myTopnav">	
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i> <a href="#" class = "menu">Меню</a></a>
-				<li class ="top itm1"><a href="#">Пункт меню</a></li>
-				<li class ="top itm2"><a href="#">Длинный пункт меню</a></li>
-				<li class ="top itm3"><a href="#">Очень длинный пункт меню</a></li>
-				<li class ="top itm4"><a href="#">Еще пункт</a></li>
-				<li class ="top itm5"><a href="#">П. пункт</a></li>
-							
+		<div class ="itm">
+		<div class ="itm2"></div>
+			<div class ="features">
+				<div class = "features-text"><span>Качественная эко-химия</span></div>
+				<div class = "features-img"><img src="image/featitm1.png" alt="Мойка окон"><img src="image/featitm2.png" alt="Мойка окон"><img src="image/featitm3.png" alt="Мойка окон"></div>
+			</div>	
 		</div>
-		<div class ="form">
-			<div class ="form-block">
-			<p>Форма</p>
-				<form action="#" name="contact-form">
-				<fieldset class ="item1" >
-				<legend>Label#1</legend>
-					<label for="label1"><input type="text" name="name1"></label>
-				</fieldset>
-				<fieldset class ="item2">			
-					<legend>Label#2	</legend>
-						<label for="label2"><input type="text" name="name2"></label>
-				</fieldset>
-				<fieldset>
-					<legend>Label#3</legend>
-						<label for="label3"><input type="text" name="name3"></label>
-				</fieldset>
-				<fieldset class ="item2">
-					<legend>Label#4</legend>
-						<label for="label4"><input type="text" name="name4"></label>
-				</fieldset>
-				<fieldset>
-					<legend>Label#5</legend>
-						<label for="label5"><input type="text" name="name5"></label>
-				</fieldset>
-						<button form= "contact-form" type="submit">submit</button>
-						
-				</form>
-			</div>
-			<div class ="form-text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </span>
-			<span><p>Ut enim ad minim veniam, quis nostrud exercitation</p></span>
-			<button form= "contact-form" type="button">more</button>
-			</div>
+		<div class ="itm">
+		<div class ="itm3"></div>
+			<div class ="features">
+				<div class = "features-text"><span>Контролируем качество</span></div>
+				<div class = "features-img"><img src="image/feat3.png" alt="Уборка в Киеве"></div>
+			</div>	
 		</div>
-		<div class ="foto-info">
-			<div class ="info">
-				<div class ="info-text"><h2>Lorem ipsum dolor sit </h2><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </span></div>
-			</div>
-			<div class ="info">
-				<div class ="info-text"><h2>Lorem ipsum</h2><span>Lorem ipsum dolor sit amet, consectetur elit, sed do</span></div>
-			</div>
-			<div class ="info">
-				<div class ="info-text"> <h2>Lorem ipsum dolor</h2><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem </span></div>
-			</div>
-		</div >
-		<div id="tileId" class ="tile">
-			<div class = "item-open"></div><div class = "item-open"></div><div class = "item-open"></div><div class = "item-open"></div><div class = "fild-item2 item-open"></div><div class = "fild-item2 item-open"></div>
-			<div class = "fild-item2 item-open"></div><div class = "fild-item2 item-open"></div><div class = "fild-item2 item-open"></div><div class = "fild-item2 item-open"></div><div class = "fild-item2 item-open"></div><div class = "fild-item2 item-open"></div>			
+		<div class ="itm">
+		<div class ="itm4"></div>
+			<div class ="features">
+				<div class = "features-text"><span>Работаем круглосуточно</span></div>
+				<div class = "features-img"><img src="image/feat4.png" alt="Уборка в Киеве"></div>
+			</div>	
 		</div>
-		<div class="more">More</div>
-	
-		<div class = "text-fild">
-			<div></div><div></div><div></div><div class ="itm"></div><div class ="itm"></div>
-			<div class ="itm"></div><div class ="itm"></div><div class ="itm"></div><div class ="itm"></div>
 		</div>
 	
-	</div>
+		<div class="howclean">
+			<div class ="howclean-title">Как мы убираем</div>
+			<div class = "howclean-text">Клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат.</div>		
+		</div>
 
-<script async src="js/script.js"></script>
+
+	</div>
+	<div class ="wraps">
+				<div class="headers">
+					<label for ="slide-1" onclick="currentSlide(1); "> <span class ="arrow" >&rarr;</span> Кухня</label>	
+					<label for ="slide-2" onclick="currentSlide(2)"; ><span class ="arrow">&rarr;</span> Комнаты</label>	
+					<label for ="slide-3" onclick="currentSlide(3)"; ><span class ="arrow" >&rarr;</span> Ванная</label>	
+					<label for ="slide-4" onclick="currentSlide(4)"; ><span class ="arrow" >&rarr;</span> Прихожая</label>	
+				</div>
+				<div class ="slide-placeholder">				
+				<input id ="slide-1" type ="radio" name ="slides" checked>
+				<section class ="slide slide-one">
+				  <a href = "#" data-tooltip="Моем пол" class ="tooltip item1" ></a>
+				  <a href = "#" data-tooltip="Моем плиту" class ="tooltip item2" ></a>
+				  <a href = "#" data-tooltip="Чистим фассады вытяжки" class ="tooltip item3"></a>
+				  <a href = "#" data-tooltip="Выносим мусор" class ="tooltip item4"></a>
+				  <a href = "#" data-tooltip="Протираем столешницу" class ="tooltip item5"></a>
+				  <a href = "#" data-tooltip="Моем фассады кухонных гарнитуров" class ="tooltip item6" ></a>
+				  <a href = "#" data-tooltip="Моем посуду" class ="tooltip item7"></a>				
+				</section>
+		
+				<input id ="slide-2" type ="radio" name ="slides">
+				<section class ="slide slide-two">				 
+					<a href = "#" data-tooltip="Моем пол" class ="tooltip item1" ></a>
+					<a href = "#" data-tooltip="Моем плиту" class ="tooltip item2" ></a>
+					<a href = "#" data-tooltip="Чистим фассады вытяжки" class ="tooltip item3"></a>
+					<a href = "#" data-tooltip="Выносим мусор" class ="tooltip item4"></a>
+					<a href = "#" data-tooltip="Протираем столешницу" class ="tooltip item5"></a>
+					<a href = "#" data-tooltip="Моем фассады кухонных гарнитуров" class ="tooltip item6" ></a>
+					<a href = "#" data-tooltip="Моем посуду" class ="tooltip item7"></a>			
+				</section>
+
+				<input id ="slide-3" type ="radio" name ="slides">
+				<section class ="slide slide-three">f</section>
+				
+				<input id ="slide-4" type ="radio" name ="slides">
+				<section class ="slide slide-four">	</section>
+			</div>
+	</div>
 	</body>
-	
