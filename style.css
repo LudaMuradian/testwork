@@ -622,7 +622,7 @@
 	}
 	.double-line {
 		order: 2;
-		border-bottom: double 15px #000;
+		border-bottom: double 15px #4011ea;
 		width: 38px;
 	}
 	.main-menu {
@@ -669,5 +669,15 @@
 	.item7 {
 		left: 47%;
 		top: 45%;
+	}
+	.tel {
+		margin-left: 0;
+	}
+	.switch-button-label-span {
+		padding-left: 50px;
+	}
+	.switch-button-checkbox:checked + .switch-button-label::before {
+	    transform: translateX(50px);
+	    transition: transform 300ms linear;
 	}
 }
