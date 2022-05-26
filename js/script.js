@@ -8,21 +8,32 @@
 	wrap.onmousemove = function (event){
 		x = event.x-650;
 		y = event.y-400;
-	if (window.innerWidth < 1240) {
-		x = event.x-300;
-		y = event.y-600;
-	} 			
 		console.log (x,y);
 		wrapCircle.style.left = '40px';
 		wrapper.style.transform = 'rotate('+57.2958*arccot(x, y)+'deg)';		
 		wrapText.style.transform = 'translateX(25px)';	
-		
+
 		function arccot(x, y) {
 			if (x > 0 && y >0 )	return Math.PI/2 - Math.atan(x/y);
 			if (x < 0 && y >0 )	return Math.PI/2 - Math.atan(x/y);
 			if (x < 0 && y <0 ) return Math.PI + Math.atan(x/y);
 			if (x > 0 && y <0 )	return 3 * Math.PI/2 + Math.abs(Math.atan(x/y));
-		}		
+		}
+	if (window.innerWidth < 1240) {
+		x = event.x-300;
+		y = event.y-600;
+		wrapText.style.transform = 'none';
+		wrapper.style.transform = 'rotate("none")';
+		wrapCircle.style.left = '0';
+	}		
+	}
+	
+		// Blue ball
+	wrapper.onmouseover = function () {
+	wrapper.classList.remove('animation-circ-small');
+	}
+	wrapper.onmouseleave = function () {
+	wrapper.classList.add('animation-circ-small');
 	}
 	wrap.onmouseleave = function () {				
 		wrapCircle.style.left = '0px';			
@@ -119,13 +130,7 @@
 		} 
 	};
 
-	// Blue ball
-	wrapper.onmouseover = function () {
-	wrapper.classList.remove('animation-circ-small');
-	}
-	wrapper.onmouseleave = function () {
-	wrapper.classList.add('animation-circ-small');
-	}
+
 // Slider
 	let slideIndex = 1;
 	showSlides (slideIndex);
