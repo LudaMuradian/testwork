@@ -4,9 +4,7 @@
 		font-style: normal;
 		margin: 0 auto;
 	}
-	div {
-		border: 1px black solid
-	}
+
 	.content-block {
 		display: flex;
 		flex-direction: column;
