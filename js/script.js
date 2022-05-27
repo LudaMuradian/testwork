@@ -92,7 +92,7 @@
 			wrapper.classList.remove('animation-circ-small');
 		};
 	
-	if (scrollTop > 1100) {
+	if (scrollTop > 1200) {
 	
 		for (i = 0; i < slidePlaceholder.length; i++){
 			slidePlaceholder[i].classList.add('placeholder-animation');
@@ -105,15 +105,13 @@
 		for (i = 0; i < slidePlaceholder.length; i++){
 			slidePlaceholder[i].classList.remove('placeholder-animation');
 		};
-	};	
-
+	};
 	}
-
-	if (window.innerWidth < 900){
+	if (window.innerWidth < 600){
 	window.onscroll = function() {
 		let scrollTop =  document.body.scrollTop;
 	console.log (scrollTop);
-			if (scrollTop > 1100 ) {
+			if (scrollTop > 2150 ) {
 		for (i = 0; i < slidePlaceholder.length; i++){
 			slidePlaceholder[i].classList.add('placeholder-animation');
 		};
