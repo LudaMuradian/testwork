@@ -21,8 +21,7 @@
 		}
 	if (window.innerWidth < 1240) {
 		x = event.x-300;
-		y = event.y-600;
-		wrapText.style.transform = 'none';
+		y = event.y-600;		
 		wrapper.style.transform = 'rotate("none")';
 		wrapCircle.style.left = '0';
 	}		
