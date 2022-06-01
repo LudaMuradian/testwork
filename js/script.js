@@ -85,7 +85,7 @@
 	window.onscroll = function() {
 	let scrollTop =  document.body.scrollTop;
 	console.log (scrollTop);
-		if (scrollTop > 20 && window.innerWidth > 1240) {
+		if (scrollTop > 20) {
 			wrapper.classList.add('animation-circ-small');
 			}else{
 			wrapper.classList.remove('animation-circ-small');
@@ -97,33 +97,36 @@
 			slidePlaceholder[i].classList.add('placeholder-animation');
 		};
 			howclean.classList.add('howclean-animation');
-			headers.classList.add('leftmenu-animation');		
+			headers.classList.add('leftmenu-animation');
+			wrap.style.display = "none";			
 		} else {
 			howclean.classList.remove('howclean-animation');
 			headers.classList.remove('leftmenu-animation');
+			wrap.style.display = "flex";
 		for (i = 0; i < slidePlaceholder.length; i++){
 			slidePlaceholder[i].classList.remove('placeholder-animation');
 		};
 	};
 	}
 	if (window.innerWidth < 600){
-	window.onscroll = function() {
-		let scrollTop =  document.body.scrollTop;
-	console.log (scrollTop);
-			if (scrollTop > 2150 ) {
-		for (i = 0; i < slidePlaceholder.length; i++){
-			slidePlaceholder[i].classList.add('placeholder-animation');
-		};
-			howclean.classList.add('howclean-animation');		
-			headers.classList.add('leftmenu-animation');		
-		} else {
-		for (i = 0; i < slidePlaceholder.length; i++){
-			slidePlaceholder[i].classList.remove('placeholder-animation');		
+		window.onscroll = function() {
+			let scrollTop =  document.body.scrollTop;
+				console.log (scrollTop);
+			if (scrollTop > 2000 ) {
+			for (i = 0; i < slidePlaceholder.length; i++){
+				slidePlaceholder[i].classList.add('placeholder-animation');
 			};
-			howclean.classList.remove('howclean-animation');		
-			headers.classList.remove('leftmenu-animation');	
-		};
-	
+				howclean.classList.add('howclean-animation');		
+				headers.classList.add('leftmenu-animation');
+				wrap.style.display = "none";				
+			} else {
+			for (i = 0; i < slidePlaceholder.length; i++){
+				slidePlaceholder[i].classList.remove('placeholder-animation');		
+			};
+				howclean.classList.remove('howclean-animation');		
+				headers.classList.remove('leftmenu-animation');	
+				wrap.style.display = "block";
+		};	
 		} 
 	};
 
@@ -133,30 +136,30 @@
 	showSlides (slideIndex);
 	
 	function currentSlide(n) { 
-    showSlides(slideIndex = n);
+		showSlides(slideIndex = n);
 	}
 	
 	function showSlides(n) {
-	let i;
-	let tooltip = document.getElementsByClassName ('tooltip');
-	
-	for (i = 0; i < arrow.length; i++) {
-		arrow[i].style.display = "none";	
-		}
-	for (let i = 0; i < tooltip.length; i++) {
-		tooltip[i].classList.add('tooltype-animation');
-	}
-	function show(){
-		for (let i = 0; i < slide.length; i++) {
-			slide[i].style.display = "none";
-			setTimeout(() => slide[i].style.display = "inline-block", 0);	
-		}	
-	}		
-	show(showSlides);
-	function showArrow() {	
-		arrow[slideIndex - 1].style.display = "inline-block";
-	}
-	setTimeout(showArrow, 3000);
+		let i;
+		let tooltip = document.getElementsByClassName ('tooltip');
+				
+			for (i = 0; i < arrow.length; i++) {
+				arrow[i].style.display = "none";	
+			}
+			for (let i = 0; i < tooltip.length; i++) {
+					tooltip[i].classList.add('tooltype-animation');
+			}
+		function show(){
+			for (let i = 0; i < slide.length; i++) {
+				slide[i].style.display = "none";
+				setTimeout(() => slide[i].style.display = "inline-block", 0);	
+			}	
+		}		
+		show(showSlides);
+		function showArrow() {	
+				arrow[slideIndex - 1].style.display = "inline-block";
+			}
+		setTimeout(showArrow, 3000);
 	};
 	
 	function myFunction() {
