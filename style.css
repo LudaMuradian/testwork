@@ -170,15 +170,13 @@
 		width: 70%;
 		text-align: center;
 	}
-	.wrapper {
-		position: fixed;
+	.wrapper {		
 		width: 200px;
 		height: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 100px;
-		bottom: 0;
+		border-radius: 100px;		
 	}
 	.wrap {
 		position: fixed;
@@ -188,7 +186,8 @@
 		justify-content: center;
 		align-items: center;
 		border-radius: 100px;
-		bottom: 0;
+		z-index: 9999;
+		top: 55%;
 	}
 	@keyframes circ {
 		100% {transform: rotate(-360deg);}
