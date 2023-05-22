@@ -91,7 +91,7 @@
 			wrapper.classList.remove('animation-circ-small');
 		};
 	
-	if (scrollTop > 1200) {
+	if (scrollTop > 500) {
 	
 		for (i = 0; i < slidePlaceholder.length; i++){
 			slidePlaceholder[i].classList.add('placeholder-animation');
