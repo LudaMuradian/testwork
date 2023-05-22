@@ -8,7 +8,7 @@
 	wrap.onmousemove = function (event){
 		x = event.x-650;
 		y = event.y-400;
-		console.log (x,y);
+	
 		wrapCircle.style.left = '40px';
 		wrapper.style.transform = 'rotate('+57.2958*arccot(x, y)+'deg)';		
 		wrapText.style.transform = 'translateX(25px)';	
