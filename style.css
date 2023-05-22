@@ -440,6 +440,7 @@
 	.slide-two {
 		background-image: url('image/bathroom.jpg');
 		background-size: 85% 100%;
+		background: url('image/bathroom.jpg');
 
 	}
 	.slide-three {
