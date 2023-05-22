@@ -19,8 +19,7 @@
 	}
 	.header-img {
 		background: #ffffff url('image/headimg.jpg') no-repeat;
-		background-image: url('image/headimg.jpg') no-repeat;
-		height: 100%;
+		background-image: url('image/headimg.jpg') no-repeat;		
 		width: 50%;
 		background-size: cover;
 		display: block;
