@@ -84,7 +84,7 @@
 
 	window.onscroll = function() {
 	let scrollTop =  document.body.scrollTop;
-	console.log (scrollTop);
+	
 		if (scrollTop > 20) {
 			wrapper.classList.add('animation-circ-small');
 			}else{
