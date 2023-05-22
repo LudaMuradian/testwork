@@ -21,6 +21,7 @@
 		height: 800px;
 		width: 50%;
 		background-size: cover;
+		display: block;
 	}
 	.header-text {
 		display: flex;
